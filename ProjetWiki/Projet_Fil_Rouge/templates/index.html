@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link href="../static/style.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+		<title>WIKIFOX</title>
+	</head>
+	<body>
+		<header>
+			<img src="../static/images/fox.png" alt="logo" class="img"/>
+			<p class="titre">WikiFox</p>
+		</header>
+		<main>
+			<h1>Bienvenue sur WikiFox</h1>
+			<form method="POST">
+					<input type = "search" name = "terme">
+   					<input type = "submit" name = "s" value = "Rechercher">
+			</form>
+			<hr>
+			<section>
+				<h2>Mes Articles</h2>
+				
+				<table>
+					<tr>
+					{%for nom in lnom %}
+						<th>{{ nom }}</th>
+					{% endfor %}
+					</tr>
+					<tr>
+					{%for lien in lurl %}
+						<td><a class='link' href="{{ lien }}" target='_blank'>Lire l'article</a></td>
+					{% endfor %}
+					</tr>
+				</table>
+			</section>
+		</main>
+		<footer>
+			<small>
+				<p class='credit'>Projet Wikifox by WRM</p>
+			</small>
+		</footer>
+	</body>
+</html>

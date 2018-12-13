@@ -1,0 +1,139 @@
+/*GENERAL */
+*{
+	box-sizing: border-box;
+	margin: auto 0;
+	font-family: 'Arimo';
+	font-size: 1rem;
+	color: #362D2D;
+}
+
+header,main{
+	padding: 1rem 2rem;
+}
+
+h1,form,h2{
+	text-align: center;
+}
+
+.titre,h1,h2{
+	font-family: 'Fjalla One';
+	font-weight: 100;
+}
+
+.link,.link:hover{
+	font-weight: bold;
+	color: #CF4E44;
+}	
+
+/*HEADER */
+
+header{
+	padding: 1rem 2rem;
+	background-color: #55827A;
+	display: flex;
+}
+
+img{
+	width: 9rem;
+	height: 9rem;
+}
+
+.titre{
+	font-size: 3rem;
+	color: #EBA58A;
+}
+/*MAIN -FORM*/
+
+main{
+	border: 0.5rem solid #55827A;
+}
+
+h1{
+	font-size: 5rem;
+	color: #CF4E44;
+}
+
+form{
+	margin: 5rem 0;
+}
+
+input[type = "search"]{
+	width: 40rem;
+	height: 2rem;
+	border-radius: 1rem;
+}
+
+input[type = "submit"]{
+	border: none;
+	border: 1px solid #EBA58A;
+	border-radius: 1rem;
+	background-color: #EBA58A;
+	padding: 1em;
+	color: #fff;
+	font-weight: bold;
+}
+
+input[type = "submit"]:hover{
+	color: #55827A;
+}
+
+/*MAIN - ARTICLES*/
+section{
+	margin: 3rem 0;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+table, th, td{
+	border-right: 0.1rem #ddd solid;
+	border-left: 0.1rem #ddd solid;
+	border-collapse: collapse;
+}
+
+table{
+	width: 40rem;
+	margin: 5rem 20rem;
+}
+
+th, td{
+	padding: 1rem;
+	text-align: center;
+}
+
+th{
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	font-family: 'Alegreya Sans';
+	font-weight: 500;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: underline;
+}
+
+.link:visited{
+	font-weight: bold;
+	color: #55827A;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #55827A;
+}
+
+small{
+	padding: 0 5rem;
+}
+
+.credit{
+	color: white;
+	padding: 0 1rem;
+	font-size: 0.7rem;
+}
